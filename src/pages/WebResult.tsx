@@ -56,7 +56,7 @@ const WebResult = () => {
                         <span className="w-1 h-1 rounded-full bg-muted-foreground"></span>
                         <span className="text-xs font-medium text-foreground">{result.name}</span>
                       </div>
-                      <h3 className="text-lg font-semibold text-accent mb-2">{result.title}</h3>
+                      <h3 className="text-lg font-semibold text-accent mb-2 hover:underline cursor-pointer" onClick={() => handleLinkClick(result.link, result.linkId)}>{result.title}</h3>
                       <p className="text-sm text-muted-foreground mb-3">{result.description}</p>
                       <button
                         onClick={() => handleLinkClick(result.link, result.linkId)}
